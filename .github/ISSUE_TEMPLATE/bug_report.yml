@@ -1,0 +1,27 @@
+name: 🐞 Bug Report
+description: Report issues
+title: "[Bug] - "
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue as precisely as possible.
+    validations:
+      required: true
+
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Steps to reproduce
+      placeholder: "1. Start server\n2. Do X\n3. Error occurs"
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Where does the issue occur?
+      options:
+        - Localhost
+        - Production

@@ -1,0 +1,46 @@
+{
+  "name": "myexpress",
+  "version": "0.0.1",
+  "description": "MyExpress is a simple, secure, and blazing fast open-source API template based on the Express.js framework and the TypeScript programming language.",
+  "main": "api.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/api.ts",
+    "build": "tsc",
+    "start": "node dist/api.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonWeiss2010/MyExpress.git"
+  },
+  "keywords": [
+    "TypeScriot",
+    "Node.js",
+    "API",
+    "Express.js"
+  ],
+  "author": "MarlonWeiss2010",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/MarlonWeiss2010/MyExpress/issues"
+  },
+  "homepage": "https://github.com/MarlonWeiss2010/MyExpress#readme",
+  "dependencies": {
+    "@prisma/client": "^6.16.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.4.0",
+    "@types/typescript": "^0.4.29",
+    "prisma": "^6.16.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}

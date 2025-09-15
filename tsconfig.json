@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Moderne JS Features
+    "module": "ESNext", // Für ESM (import/export)
+    "moduleResolution": "Node", // Node-Module-Auflösung
+    "rootDir": "src", // Quellcode liegt in src/
+    "outDir": "dist", // Kompilierte Dateien nach dist/
+    "esModuleInterop": true, // Für Importe wie 'import express from "express"'
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Alle Strict-Checks aktivieren
+    "skipLibCheck": true, // Keine Typ-Checks für node_modules
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true, // Für JSON-Importe
+    "isolatedModules": true, // Pflicht für ts-node-dev mit ESM
+    "noEmitOnError": false // Trotzdem kompilieren bei TS-Fehlern
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

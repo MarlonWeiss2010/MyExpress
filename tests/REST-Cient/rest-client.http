@@ -1,0 +1,26 @@
+
+
+### Sample GET Request
+# This request retrieves a user by ID
+# You can modify the user ID or URL as needed
+
+GET https://jsonplaceholder.typicode.com/users/1
+Accept: application/json
+
+### Sample POST Request
+# This sends a new user to the API (example payload)
+# Change the URL or body to match your actual API
+
+POST https://jsonplaceholder.typicode.com/users
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "username": "johndoe123"
+}
+
+### Notes:
+# - The REST Client allows running each block independently.
+# - Hover over `GET` or `POST` and click "Send Request" to test it.
+# - This example uses the public JSONPlaceholder test API.
